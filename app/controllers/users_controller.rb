@@ -19,6 +19,7 @@ class UsersController < ApplicationController
 
     if @user.save
       UserMailer.with(user: @user).contact_us_confirmation.deliver_later
+      UserMailer.with(user: @user).inquiry.deliver_later
       render json: @user, status: :created, location: @user
     else
       render json: @user.errors, status: :unprocessable_entity
