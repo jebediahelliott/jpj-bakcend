@@ -5,7 +5,7 @@ import Home from '../../components/Home/Home';
 import About from '../../components/About/About';
 import TrainingPrograms from '../../components/TrainingPrograms/TrainingPrograms';
 import Contact from '../../components/Contact/Contact';
-import Navbar from '../../components/Navbar/Navbar';
+import Navigation from '../../components/Navigation/Navigation';
 import Footer from '../../components/Footer/Footer';
 import BasicProgram from '../../components/BasicProgram/BasicProgram';
 import Consultation from '../../components/Consultation/Consultation';
@@ -46,7 +46,7 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-          <Navbar user={this.state.user} handleLogout={this.handleLogout} />
+          <Navigation user={this.state.user} handleLogout={this.handleLogout} />
           <div className="main">
           <Switch>
             <Route exact path="/" render={routerProps => <Home {...routerProps} page={this.state.home} />} />

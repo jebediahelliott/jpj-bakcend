@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Navbar from './Navbar';
+import Navigation from './Navigation';
 
-describe('<Navbar />', () => {
+describe('<Navigation />', () => {
   it('Has a link for each page and a log in link', () => {
-    const wrapper = shallow(<Navbar.WrappedComponent />);
+    const wrapper = shallow(<Navigation.WrappedComponent />);
     expect(wrapper.find('NavLink').length).toEqual(11);
   })
 })
