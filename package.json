@@ -7,7 +7,6 @@
   "scripts": {
     "build": "npm install --prefix ./client && npm run build --prefix ./client",
     "deploy": "cp -a client/build/. public/",
-    "set-fallback-route": "cp client/build/index.html /app/views/application/index.html.erb",
-    "heroku-postbuild": "npm run build && npm run deploy && npm run set-fallback-route"
+    "heroku-postbuild": "npm run build && npm run deploy"
   }
 }
