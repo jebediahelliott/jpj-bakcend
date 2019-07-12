@@ -1,8 +1,4 @@
 .footer {
-  /* position: absolute;
-  bottom: 0;
-  left: 0; */
-  /* width: 80%; */
   background: grey;
   margin: none;
 }
@@ -14,7 +10,7 @@
   width: 100%;
   margin: auto;
   padding: .25em 0;
-  font: small-caps 1.5em DoulosSILW;
+  font: small-caps 1em DoulosSILW;
 }
 
 .footer-content a {
