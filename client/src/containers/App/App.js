@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import Home from '../../components/Home/Home';
 import About from '../../components/About/About';
 import TrainingPrograms from '../../components/TrainingPrograms/TrainingPrograms';
@@ -45,7 +45,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Router>
           <Navigation user={this.state.user} handleLogout={this.handleLogout} />
           <div className="main">
           <Switch>
@@ -63,7 +62,6 @@ class App extends Component {
           </Switch>
           </div>
           <Footer />
-        </Router>
       </div>
     );
   }
