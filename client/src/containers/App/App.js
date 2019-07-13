@@ -13,6 +13,7 @@ import GroupClasses from '../../components/GroupClasses/GroupClasses';
 import PuppySchool from '../../components/PuppySchool/PuppySchool';
 import ResidentTraining from '../../components/ResidentTraining/ResidentTraining';
 import Tracking from '../../components/Tracking/Tracking';
+import ServiceTraining from '../../components/ServiceTraining/ServiceTraining'
 import bannerLogo from '../../components/images/output-onlinepngtools.png'
 
 
@@ -55,6 +56,7 @@ class App extends Component {
             <Route path="/about" render={routerProps => <About {...routerProps} dogs={this.state.dogs} page={this.state.about} />} />
             <Route path="/training-programs" render={routerProps => <TrainingPrograms {...routerProps} page={this.state.trainingPrograms} />} />
             <Route path="/contact" component={Contact} />
+            <Route path="/service-training" component={ServiceTraining} />
             <Route path="/consultation" render={routerProps => <Consultation {...routerProps} page={this.state.consultation} />} />
             <Route path="/puppy-school" render={routerProps => <PuppySchool {...routerProps} page={this.state.puppySchool} />} />
             <Route path="/basic-program" render={routerProps => <BasicProgram {...routerProps} page={this.state.basicProgram} />} />

@@ -103,6 +103,16 @@ class Navigation extends Component {
                 </li>
                 <li>
                   <NavLink
+                    to="/service-training"
+                    className="link"
+                    activeStyle={{color: 'black'}}
+                    exact
+                  >
+                    Service Training
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
                     to="/tracking"
                     className="link"
                     activeStyle={{color: 'black'}}
