@@ -85,10 +85,23 @@ li:last-child {
   text-align: center;
 }
 
+.navIcon {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navIcon i {
+  padding: 5px 10px;
+}
+
 
 @media only screen and (max-width: 600px) {
   .menu {
     flex-direction: column;
+  }
+
+  .navBar.navBorder {
+    border-top: none;
   }
 
 }

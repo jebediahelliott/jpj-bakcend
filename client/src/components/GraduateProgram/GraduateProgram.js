@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import '../Layout.css';
 import Navigation from '../Navigation/Navigation';
 import ResponsiveMenu from 'react-responsive-navbar'
+import HamburgerDiv from '../HamburgerDiv/HamburgerDiv'
+import ArrowDiv from '../ArrowDiv/ArrowDiv'
 
 class GraduateProgram extends Component {
 
@@ -11,8 +13,8 @@ class GraduateProgram extends Component {
     return(
       <div>
         <ResponsiveMenu
-          menuOpenButton={<div className="navBar"><i className="fas fa-bars"></i></div>}
-          menuCloseButton={<div className="navBar"><i className="fas fa-arrow-up"></i></div>}
+          menuOpenButton={<HamburgerDiv />}
+          menuCloseButton={<ArrowDiv />}
           changeMenuOn="600px"
           menu={<Navigation />}
         />
