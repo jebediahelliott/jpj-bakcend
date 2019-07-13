@@ -51,7 +51,7 @@ class App extends Component {
             <img src={bannerLogo} id="banner-logo" className="banner-image" alt="Logo" />
           </div>
           <Switch>
-            <Route exact path="/" render={routerProps => <Home {...routerProps} page={this.state.home} />} />
+            <Route exact path="/" render={routerProps => <About {...routerProps} page={this.state.home} />} />
             <Route path="/about" render={routerProps => <About {...routerProps} dogs={this.state.dogs} page={this.state.about} />} />
             <Route path="/training-programs" render={routerProps => <TrainingPrograms {...routerProps} page={this.state.trainingPrograms} />} />
             <Route path="/contact" component={Contact} />

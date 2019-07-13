@@ -14,16 +14,6 @@ class Navigation extends Component {
           <ul className="menu">
             <li>
               <NavLink
-                to="/"
-                className="link"
-                activeStyle={{color: '#F1CD4E'}}
-                exact
-              >
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
                 to="/about"
                 className="link"
                 activeStyle={{color: '#F1CD4E'}}
@@ -143,6 +133,17 @@ class Navigation extends Component {
 
 export default withRouter(Navigation);
 
+// Home link to be added when we have content
+// <li>
+//   <NavLink
+//     to="/"
+//     className="link"
+//     activeStyle={{color: '#F1CD4E'}}
+//     exact
+//   >
+//     Home
+//   </NavLink>
+// </li>
 
 
 // Navbar for logged in users
