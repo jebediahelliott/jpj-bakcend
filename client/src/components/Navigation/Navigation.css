@@ -65,11 +65,8 @@
 }
 
 .dropdown li {
-  display: flex;
-  flex-direction: column;
   border-bottom: 2px solid black;
   padding: 0 .5em;
-  height: initial;
 }
 
 .dropdown .link {
@@ -88,4 +85,31 @@ li:last-child {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+.small-menu {
+  display: none;
+}
+
+.small-menu-dropdown {
+  display: none;
+  background: rgb(132,14,5);
+}
+
+#small-droplink:hover > .small-menu-dropdown {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .menu {
+    display: none;
+  }
+  .small-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
