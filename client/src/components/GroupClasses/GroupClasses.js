@@ -22,11 +22,11 @@ class GroupClasses extends Component {
         <h1>Group Classes</h1>
         <h3>Beginner Group Class</h3>
         <p>
-          The beginer's group class is an important part of our training program. In this class you get to practice and improve all of the skills you and your dog have learned, but in a more challenging environment. Everyone and their dog in this class is at approximately the same level of training.
+          The beginner's group class is an important part of our training program. In this class you get to practice and improve all of the skills you and your dog have learned, but in a more challenging environment. Everyone and their dog in this class is at approximately the same level of training.
         </p>
         <h3>Advanced Group Class</h3>
         <p>
-          Advanced group class is for the dog/handler teams that are ready for a mor demanding challenge to promote better skills in both the handler and dog. The class offers more difficult excercises in the a closer proximity tot he other dog/handler teams requiring tmore teamwork from you and your dog.
+          Advanced group class is for the dog/handler teams that are ready for a more demanding challenge to promote better skills in both the handler and dog. The class offers more difficult excercises in a closer proximity to the other dog/handler teams requiring more teamwork from you and your dog.
         </p>
         <h4>Pricing:</h4>
         <p>

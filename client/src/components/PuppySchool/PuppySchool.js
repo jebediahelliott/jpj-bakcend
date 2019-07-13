@@ -22,7 +22,7 @@ class PuppySchool extends Component {
         <div className='staticPage'>
         <h1>Puppy School</h1>
         <p>
-          Start your puppy off right! This program prepares your puppy ofr future training, builds confidence, and teaches you how to properly communicate with and motivate your puppy. This program also consisits of teaching housebreaking techniques, crate training, guidance with destructive chewing, jumping, bitig, and many other normal puppy problems. A strong emphasis is placed on training the human members of the family.
+          Start your puppy off right! This program prepares your puppy for future training, builds confidence, and teaches you how to properly communicate with and motivate your puppy. This program also consisits of teaching housebreaking techniques, crate training, guidance with destructive chewing, jumping, biting, and many other normal puppy problems. A strong emphasis is placed on training the human members of the family.
         </p>
         <p>
           Puppy School consists of four one-hour lessons, offered in both private and group settings.

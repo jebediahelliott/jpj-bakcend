@@ -22,7 +22,7 @@ class Consultation extends Component {
         <div className='staticPage'>
           <h1>Consultation</h1>
           <p>
-            This in home visit allows the trainer to evaluate your dog, discuss any obedience problems, and help determine wich obedience program suit you and your dog. The visit is 30 minutes and free of charge.
+            This in home visit allows the trainer to evaluate your dog, discuss any obedience problems, and help determine wich obedience program suits you and your dog. The visit is 30 minutes and free of charge.
           </p>
         </div>
       </div>
