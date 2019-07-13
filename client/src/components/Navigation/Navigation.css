@@ -68,23 +68,6 @@ li:last-child {
   text-align: center;
 }
 
-.small-menu {
-  display: none;
-}
-
-#navBar .small-menu-dropdown {
-  /* display: none; */
-  width: 100vw;
-  margin-top: 10px;
-  background: rgb(132,14,5);
-}
-
-#small-droplink:hover > .small-menu-dropdown {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
 .navIcon {
   display: flex;
   justify-content: flex-end;
@@ -102,6 +85,10 @@ li:last-child {
 
   .navBar.navBorder {
     border-top: none;
+  }
+
+  .dropdown {
+    width: 100vw;
   }
 
 }
