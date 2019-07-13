@@ -30,7 +30,7 @@ class ResidentTraining extends Component {
         <p>
           Once your dog is trained, we will focus on training you. You will learn what and how your dog has learned in four private follow-up lessons and group classes, as required.
         </p>
-        <p>Price $2000</p>
+        <p>Price $2500</p>
 
         <p>Please contact us for more information regarding Resident Training Programs.</p>
         </div>

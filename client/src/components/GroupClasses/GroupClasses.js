@@ -28,9 +28,11 @@ class GroupClasses extends Component {
         <p>
           Advanced group class is for the dog/handler teams that are ready for a mor demanding challenge to promote better skills in both the handler and dog. The class offers more difficult excercises in the a closer proximity tot he other dog/handler teams requiring tmore teamwork from you and your dog.
         </p>
-        <h4>Pricing</h4>
+        <h4>Pricing:</h4>
         <p>
           Five classes: $85
+        </p>
+        <p>
           Ten classes: $130
         </p>
         </div>
