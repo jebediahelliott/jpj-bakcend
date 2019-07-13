@@ -15,20 +15,127 @@ class Navigation extends Component {
         </div>
         <nav id="navBar">
           <ul className="menu">
-            <li><NavLink to="/" className="link" activeStyle={{color: '#F1CD4E'}} exact>Home</NavLink></li>
-            <li><NavLink to="/about" className="link" activeStyle={{color: '#F1CD4E'}} exact>About</NavLink></li>
-            <li id="droplink"><NavLink to="/training-programs" className="link" activeStyle={{color: '#F1CD4E'}} exact>Training Programs</NavLink>
+            <li>
+              <NavLink
+                to="/"
+                className="link"
+                activeStyle={{color: '#F1CD4E'}}
+                exact
+              >
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/about"
+                className="link"
+                activeStyle={{color: '#F1CD4E'}}
+                exact
+              >
+                About
+              </NavLink>
+            </li>
+            <li id="droplink">
+              <NavLink
+                to='#'
+                className="link"
+                activeStyle={{color: '#F1CD4E'}}
+              >
+                Services
+              </NavLink>
               <ul className="dropdown">
-                <li><NavLink to="/consultation" className="link" activeStyle={{color: 'black'}} exact>Consultation</NavLink></li>
-                <li><NavLink to="/puppy-school" className="link" activeStyle={{color: 'black'}} exact>Puppy School</NavLink></li>
-                <li><NavLink to="/basic-program" className="link" activeStyle={{color: 'black'}} exact>Basic Program</NavLink></li>
-                <li><NavLink to="/group-classes" className="link" activeStyle={{color: 'black'}} exact>Group Classes</NavLink></li>
-                <li><NavLink to="/graduate-program" className="link" activeStyle={{color: 'black'}} exact>Graduate Program</NavLink></li>
-                <li><NavLink to="/resident-training" className="link" activeStyle={{color: 'black'}} exact>Resident Training</NavLink></li>
-                <li><NavLink to="/tracking" className="link" activeStyle={{color: 'black'}} exact>Tracking</NavLink></li>
+                <li>
+                  <NavLink
+                    to="/training-programs"
+                    className="link"
+                    activeStyle={{color: 'black'}}
+                    exact
+                  >
+                    Training Programs
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/consultation"
+                    className="link"
+                    activeStyle={{color: 'black'}}
+                    exact
+                  >
+                    Consultation
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/puppy-school"
+                    className="link"
+                    activeStyle={{color: 'black'}}
+                    exact
+                  >
+                    Puppy School
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/basic-program"
+                    className="link"
+                    activeStyle={{color: 'black'}}
+                    exact
+                  >
+                    Basic Program
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/group-classes"
+                    className="link"
+                    activeStyle={{color: 'black'}}
+                    exact
+                  >
+                    Group Classes
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/graduate-program"
+                    className="link"
+                    activeStyle={{color: 'black'}}
+                    exact
+                  >
+                    Graduate Program
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/resident-training"
+                    className="link"
+                    activeStyle={{color: 'black'}}
+                    exact
+                  >
+                    Resident Training
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/tracking"
+                    className="link"
+                    activeStyle={{color: 'black'}}
+                    exact
+                  >
+                    Tracking
+                  </NavLink>
+                </li>
               </ul>
             </li>
-            <li><NavLink to="/contact" className="link" activeStyle={{color: '#F1CD4E'}} exact>Contact</NavLink></li>
+            <li>
+              <NavLink
+                to="/contact"
+                className="link"
+                activeStyle={{color: '#F1CD4E'}}
+                exact
+              >
+                Contact
+              </NavLink>
+            </li>
           </ul>
         </nav>
       </div>
@@ -39,7 +146,6 @@ class Navigation extends Component {
 
 export default withRouter(Navigation);
 
-// Non bootstrap navbar
 
 
 // Navbar for logged in users
