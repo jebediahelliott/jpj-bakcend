@@ -13,7 +13,7 @@ import GroupClasses from '../../components/GroupClasses/GroupClasses';
 import PuppySchool from '../../components/PuppySchool/PuppySchool';
 import ResidentTraining from '../../components/ResidentTraining/ResidentTraining';
 import Tracking from '../../components/Tracking/Tracking';
-import bannerLogo from '../../components/images/JPJtext2.jpeg'
+import bannerLogo from '../../components/images/output-onlinepngtools.png'
 
 
 
