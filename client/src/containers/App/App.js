@@ -5,7 +5,6 @@ import Home from '../../components/Home/Home';
 import About from '../../components/About/About';
 import TrainingPrograms from '../../components/TrainingPrograms/TrainingPrograms';
 import Contact from '../../components/Contact/Contact';
-import Navigation from '../../components/Navigation/Navigation';
 import Footer from '../../components/Footer/Footer';
 import BasicProgram from '../../components/BasicProgram/BasicProgram';
 import Consultation from '../../components/Consultation/Consultation';
@@ -15,7 +14,6 @@ import PuppySchool from '../../components/PuppySchool/PuppySchool';
 import ResidentTraining from '../../components/ResidentTraining/ResidentTraining';
 import Tracking from '../../components/Tracking/Tracking';
 import bannerLogo from '../../components/images/JPJtext2.jpeg'
-import ResponsiveMenu from 'react-responsive-navbar'
 
 
 
@@ -52,12 +50,6 @@ class App extends Component {
           <div className="banner">
             <img src={bannerLogo} id="banner-logo" className="banner-image" alt="Logo" />
           </div>
-          <ResponsiveMenu
-            menuOpenButton={<div><i className="fas fa-bars"></i></div>}
-            menuCloseButton={<div><i className="fas fa-arrow-up"></i></div>}
-            changeMenuOn="600px"
-            menu={<Navigation />}
-          />
           <Switch>
             <Route exact path="/" render={routerProps => <Home {...routerProps} page={this.state.home} />} />
             <Route path="/about" render={routerProps => <About {...routerProps} dogs={this.state.dogs} page={this.state.about} />} />
