@@ -3,15 +3,6 @@
   src: url(../fonts/DoulosSIL-R.woff);
 }
 
-.banner {
-  background-color: white;
-  margin: auto;
-  height: 8em;
-  display: flex;
-  justify-content: center;
-  opacity: 0.75;
-}
-
 #navBar {
   margin: auto;
   border-bottom: 5px solid #F1CD4E;
@@ -31,17 +22,7 @@
   color: #F1CD4E;
 }
 
-
-.banner-image {
-  max-height: 8em;
-  object-fit: contain;
-}
-
-#banner-logo {
-  height: 8em;
-}
-
-#navBar ul {
+ul {
   padding: 0;
   margin: 0;
 }
@@ -91,8 +72,10 @@ li:last-child {
   display: none;
 }
 
-.small-menu-dropdown {
-  display: none;
+#navBar .small-menu-dropdown {
+  /* display: none; */
+  width: 100vw;
+  margin-top: 10px;
   background: rgb(132,14,5);
 }
 
@@ -103,13 +86,9 @@ li:last-child {
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .menu {
-    display: none;
+    flex-direction: column;
   }
-  .small-menu {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
+
 }

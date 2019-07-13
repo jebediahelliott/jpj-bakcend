@@ -14,6 +14,9 @@ import GroupClasses from '../../components/GroupClasses/GroupClasses';
 import PuppySchool from '../../components/PuppySchool/PuppySchool';
 import ResidentTraining from '../../components/ResidentTraining/ResidentTraining';
 import Tracking from '../../components/Tracking/Tracking';
+import bannerLogo from '../../components/images/JPJtext2.jpeg'
+import ResponsiveMenu from 'react-responsive-navbar'
+
 
 
 class App extends Component {
@@ -45,8 +48,16 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-          <Navigation user={this.state.user} handleLogout={this.handleLogout} />
-          <div className="main">
+        <div className="main">
+          <div className="banner">
+            <img src={bannerLogo} id="banner-logo" className="banner-image" alt="Logo" />
+          </div>
+          <ResponsiveMenu
+            menuOpenButton={<div><i className="fas fa-bars"></i></div>}
+            menuCloseButton={<div><i className="fas fa-arrow-up"></i></div>}
+            changeMenuOn="600px"
+            menu={<Navigation />}
+          />
           <Switch>
             <Route exact path="/" render={routerProps => <Home {...routerProps} page={this.state.home} />} />
             <Route path="/about" render={routerProps => <About {...routerProps} dogs={this.state.dogs} page={this.state.about} />} />
@@ -60,8 +71,8 @@ class App extends Component {
             <Route path="/resident-training" render={routerProps => <ResidentTraining {...routerProps} page={this.state.residentTraining} />} />
             <Route path="/tracking" render={routerProps => <Tracking {...routerProps} page={this.state.tracking} />} />
           </Switch>
-          </div>
-          <Footer />
+        </div>
+        <Footer />
       </div>
     );
   }

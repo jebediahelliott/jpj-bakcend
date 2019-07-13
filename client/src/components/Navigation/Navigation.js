@@ -3,16 +3,13 @@ import { NavLink, withRouter } from 'react-router-dom';
 import { Navbar, Nav, Dropdown, NavDropdown } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 import './Navigation.css';
-import bannerLogo from '../images/JPJtext2.jpeg'
+
 
 class Navigation extends Component {
 
   render() {
     return (
       <div>
-        <div className="banner">
-          <img src={bannerLogo} id="banner-logo" className="banner-image" alt="Logo" />
-        </div>
         <nav id="navBar">
           <ul className="menu">
             <li>
@@ -135,141 +132,6 @@ class Navigation extends Component {
               >
                 Contact
               </NavLink>
-            </li>
-          </ul>
-          <ul className="small-menu">
-            <li>
-              <NavLink
-                id="small-droplink"
-                to='#'
-                className="link "
-                activeStyle={{color: '#F1CD4E'}}
-              >
-                Menu
-              </NavLink>
-              <ul className="small-menu-dropdown">
-                <li>
-                  <NavLink
-                    to="/"
-                    className="link"
-                    activeStyle={{color: '#F1CD4E'}}
-                    exact
-                  >
-                    Home
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/about"
-                    className="link"
-                    activeStyle={{color: '#F1CD4E'}}
-                    exact
-                  >
-                    About
-                  </NavLink>
-                </li>
-                <li id="droplink">
-                  <NavLink
-                    to='#'
-                    className="link"
-                    activeStyle={{color: '#F1CD4E'}}
-                  >
-                    Services
-                  </NavLink>
-                  <ul className="dropdown">
-                    <li>
-                      <NavLink
-                        to="/training-programs"
-                        className="link"
-                        activeStyle={{color: 'black'}}
-                        exact
-                      >
-                        Training Programs
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="/consultation"
-                        className="link"
-                        activeStyle={{color: 'black'}}
-                        exact
-                      >
-                        Consultation
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="/puppy-school"
-                        className="link"
-                        activeStyle={{color: 'black'}}
-                        exact
-                      >
-                        Puppy School
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="/basic-program"
-                        className="link"
-                        activeStyle={{color: 'black'}}
-                        exact
-                      >
-                        Basic Program
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="/group-classes"
-                        className="link"
-                        activeStyle={{color: 'black'}}
-                        exact
-                      >
-                        Group Classes
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="/graduate-program"
-                        className="link"
-                        activeStyle={{color: 'black'}}
-                        exact
-                      >
-                        Graduate Program
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="/resident-training"
-                        className="link"
-                        activeStyle={{color: 'black'}}
-                        exact
-                      >
-                        Resident Training
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="/tracking"
-                        className="link"
-                        activeStyle={{color: 'black'}}
-                        exact
-                      >
-                        Tracking
-                      </NavLink>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <NavLink
-                    to="/contact"
-                    className="link"
-                    activeStyle={{color: '#F1CD4E'}}
-                    exact
-                  >
-                    Contact
-                  </NavLink>
-                </li>
-              </ul>
             </li>
           </ul>
         </nav>
