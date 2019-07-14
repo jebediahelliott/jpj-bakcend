@@ -14,7 +14,7 @@ class BasicProgram extends Component {
       <div>
         <ResponsiveMenu
           menuOpenButton={<HamburgerDiv />}
-          menuCloseButton={<HamburgerDiv />}
+          menuCloseButton={<ArrowDiv />}
           changeMenuOn="600px"
           menu={<Navigation />}
         />
