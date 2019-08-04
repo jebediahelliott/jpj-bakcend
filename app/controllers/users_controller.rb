@@ -39,7 +39,6 @@ class UsersController < ApplicationController
   end
 
   def contact_us
-    binding.pry
     if @user = User.find_by(email: params[:user][:email])
       UserMailer.with(user: @user).contact_us_confirmation.deliver_now
       UserMailer.with(user: @user).inquiry.deliver_now
