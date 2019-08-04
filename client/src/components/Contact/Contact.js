@@ -31,6 +31,7 @@ class Contact extends Component {
         email: '',
         message: ''
       })
+      console.log('I made it here');
       this.props.history.push('/about');
     })
   }
