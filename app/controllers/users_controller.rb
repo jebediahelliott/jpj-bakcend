@@ -18,8 +18,6 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      UserMailer.with(user: @user).contact_us_confirmation.deliver_now
-      UserMailer.with(user: @user).inquiry.deliver_now
       render json: @user, status: :created, location: @user
     else
       render json: @user.errors, status: :unprocessable_entity
@@ -38,6 +36,23 @@ class UsersController < ApplicationController
   # DELETE /users/1
   def destroy
     @user.destroy
+  end
+
+  def contact_us
+    binding.pry
+    if @user = User.find_by(email: params[:user][:email])
+      UserMailer.with(user: @user).contact_us_confirmation.deliver_now
+      UserMailer.with(user: @user).inquiry.deliver_now
+    else
+      @user = User.new(user_params)
+      if @user.save
+        UserMailer.with(user: @user).contact_us_confirmation.deliver_now
+        UserMailer.with(user: @user).inquiry.deliver_now
+        render json: @user, status: :created, location: @user
+      else
+        render json: @user.errors, status: :unprocessable_entity
+      end
+    end
   end
 
   private

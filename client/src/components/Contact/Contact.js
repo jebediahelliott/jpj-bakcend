@@ -22,7 +22,7 @@ class Contact extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault()
-    axios.post('/users', {"user": this.state})
+    axios.post('/contact_us', {"user": this.state})
     .then(res => {
       this.setState({
         first_name: '',
@@ -31,6 +31,7 @@ class Contact extends Component {
         email: '',
         message: ''
       })
+      this.props.history.push('/about');
     })
   }
 
