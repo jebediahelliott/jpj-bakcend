@@ -1,7 +1,7 @@
 <h1>Information</h1>
 <ul>
   <li>Name: <%= @user.first_name %> <%= @user.last_name %></li>
-  <li>Email: <%= @user.email %></li>
+  <li>Email: <a href="mailto:<%= @user.email %>"><%= @user.email %></a></li>
   <li>Phone Number: <%= @user.phone_number %></li>
   <li>Message: <%= @user.message %></li>
 </ul>
