@@ -24,7 +24,6 @@ class Navigation extends Component {
               <NavLink
                 to='#'
                 className="link"
-                activeStyle={{color: '#F1CD4E'}}
               >
                 Services
               </NavLink>
