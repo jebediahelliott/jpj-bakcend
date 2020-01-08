@@ -22,7 +22,7 @@ class Navigation extends Component {
             </li>
             <li id="droplink">
               <NavLink
-                to='#'
+                to='/training-programs'
                 className="link"
                 activeStyle={{color: '#F1CD4E'}}
               >
